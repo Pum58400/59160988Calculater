@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>calculater</title>
+
+</head>
+<style>
+
+.bo{
+  
+    height:150px;
+    width:300px;
+    
+    
+    background-color:#81d5f7;
+   
+}
+body {
+    background-image: url("https://ae01.alicdn.com/kf/HTB1Lfq5PFXXXXaIaXXXq6xXFXXX1/Huayi-sztuki-tkaniny-szary-adamaszku-tapety-t-o-fotografia-noworodka-na-studiach-spadek-d-7314.jpg_640x640.jpg");
+} 
+    
+</style>
+
+<body> 
+        <br><br><br><br><br><br><br><br><br><br>
+    <center><div class="bo">
+      
+           <b>Calculater</b><br>
+           In put number1  :<input id="input1" name="input1" size="30" ><br>
+         In put number2  : <input id="input2" name="input2" size="30" ><br>       
+           
+    
+        <button onclick="javascript: a();">+</button>
+        <button onclick="javascript: b();">-</button>
+        <button onclick="javascript: c();">x</button>
+        <button onclick="javascript: d();">/</button><br>
+        Result : <font id="show" color="pink"></font>
+     
+        </div> </center>
+</body>
+
+<script language="javascript">
+       
+    function a(){    
+        
+         var int1 = document.getElementById("input1").value;
+         var int2 = document.getElementById("input2").value;      
+         var n1 = parseInt(int1);
+         var n2 = parseInt(int2);                  
+         if ((isNaN(n1))||(isNaN(n2))){
+             document.getElementById("show").setAttribute("color","red");
+             show.innerHTML="ERROR";
+         }    
+         else {         
+            s=n1+n2;      
+            document.getElementById("show").setAttribute("color","green");
+            show.innerHTML=s;
+         }
+        }
+    function b(){    
+        
+         var int1 = document.getElementById("input1").value;
+         var int2 = document.getElementById("input2").value;      
+         var n1 = parseInt(int1);
+         var n2 = parseInt(int2);                  
+         if ((isNaN(n1))||(isNaN(n2))){
+             document.getElementById("show").setAttribute("color","red");
+             show.innerHTML="ERROR";
+         }    
+         else {         
+            s=n1-n2;      
+            document.getElementById("show").setAttribute("color","green");
+            show.innerHTML=s;
+         }
+        }  
+    function c(){    
+        
+         var int1 = document.getElementById("input1").value;
+         var int2 = document.getElementById("input2").value;      
+         var n1 = parseInt(int1);
+         var n2 = parseInt(int2);                  
+         if ((isNaN(n1))||(isNaN(n2))){
+             document.getElementById("show").setAttribute("color","red");
+             show.innerHTML="ERROR";
+         }    
+         else {         
+            s=n1*n2;      
+            document.getElementById("show").setAttribute("color","green");
+            show.innerHTML=s;
+         }
+       }
+    function d(){    
+        
+         var int1 = document.getElementById("input1").value;
+         var int2 = document.getElementById("input2").value;      
+         var n1 = parseInt(int1);
+         var n2 = parseInt(int2);    
+         if ((isNaN(n1))||(isNaN(n2))){
+             document.getElementById("show").setAttribute("color","red");
+             show.innerHTML="ERROR";
+         }    
+         else {         
+            s=n1/n2;      
+            document.getElementById("show").setAttribute("color","green");
+            show.innerHTML=s;
+         }      
+       }   
+  </script>
+</html>
+
